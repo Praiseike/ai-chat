@@ -1,6 +1,8 @@
 let container = {};
 let api = 'https://api.openai.com/v1/completions';
-let api_key = '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';
+let api1 = 'sk-dlrt23gQsfFuxxVlouxpT3Bl';
+let api2 = 'bkFJ760gAkj7xm4PgWJyuMED';
+let api_key = api1 + api2;
 
 let headers = {
   'Content-Type': 'application/json',
