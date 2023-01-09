@@ -69,6 +69,7 @@ const sendMessage = () => {
   let element = genComponent(message);
   container.display.appendChild(element);
   sendRequest(message);
+  container.msgInput.value = "";
 };
 
 window.onload = () => {
