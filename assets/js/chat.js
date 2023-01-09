@@ -10,7 +10,7 @@ let headers = {
 };
 
 const scroll = () => {
-  container.display.scrollBy(0,400)
+  window.scrollBy(0,400)
 }
 
 const genComponent = (msg, flag = false) => {
