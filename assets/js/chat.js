@@ -9,6 +9,10 @@ let headers = {
   Authorization: 'Bearer ' + api_key,
 };
 
+const scroll = () => {
+  container.display.scrollBy(0,400)
+}
+
 const genComponent = (msg, flag = false) => {
   let msg_box = document.createElement('div');
   let msg_dialog = document.createElement('div');
@@ -28,6 +32,7 @@ const onResponse = data => {
   const response = data.choices[0].text;
   const e = genComponent(response, true);
   container.display.appendChild(e);
+  scroll()
 };
 
 const sendRequest = msg => {
@@ -56,6 +61,7 @@ const sendRequest = msg => {
       console.log('Failed to send message');
     });
   console.log('sent data');
+  scroll();
 };
 
 const sendMessage = () => {
