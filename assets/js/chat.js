@@ -70,4 +70,8 @@ window.onload = () => {
   container.msgInput = document.querySelector('input');
   container.display = document.querySelector('.display');
   container.sendBtn.addEventListener('click', sendMessage);
+  container.msgInput.addEventListener('keyup', (event) => {
+    if(event.keyCode === 13)
+      sendMessage();
+  });
 };
