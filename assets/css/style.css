@@ -36,6 +36,9 @@ main {
   text-decoration: none;
 }
 
+.light{
+  border: hidden;
+}
 .dark {
   color: white;
   background:none;
